@@ -27,7 +27,7 @@ Route::group(['middleware' => 'jwt.verify'], function () {
 
     Route::get('products/{product}', 'ProductController@show');
     Route::post('products', 'ProductController@save');
-    Route::put('products/{product}', 'ProductController@update');
+    Route::put('products/update/{product}', 'ProductController@update');
     Route::put('products/{product}', 'ProductController@delete');
 
 
